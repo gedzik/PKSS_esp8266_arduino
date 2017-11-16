@@ -21,6 +21,7 @@ IPAddress ip(12, 12, 12, 125);
 void setup()
 {
 	/*lcd*/
+	pinMode(D0, OUTPUT);
 	display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 	display.display();
 	display.clearDisplay();
@@ -36,12 +37,14 @@ void setup()
 	display.setTextColor(WHITE);
 	display.setCursor(0, 0);
   /* wifi */
-	WiFi.config(ip);
+//	WiFi.config(ip);
 	bool isConnected = false;
 	Serial.begin(115200);
 	
 	
-	WiFi.begin("PKSS", "qwe147rty258");
+	//WiFi.begin("PKSS", "qwe147rty258");
+	//WiFi.begin("gx0", "zxcvb123");
+	WiFi.begin("AndroidAP", "sddj1894");
 	while (!(isConnected = WiFi.isConnected()))
 	{
 		Serial.println(isConnected);
@@ -53,27 +56,29 @@ void setup()
 	HTTPClient client;
 	display.println("Conected!");
 	display.display();
-	client.begin("http://conti.ml");
+	client.begin("http://psychiatryk.ml");
 	client.GET();
 	WiFiClient stream = client.getStream();
 	String s = stream.readString();
 
 	Serial.println(s);
-
+	//pinMode(8, OUTPUT);
 	
 }
 
 void loop()
 {
-	delay(1000);
+	delay(2000);
 	display.drawBitmap(0, 0, dickbutt1, 128, 64, 1);
 	display.display();
 	display.clearDisplay();
-	delay(500);
+	digitalWrite(D0, HIGH);
+	delay(2000);
 	display.drawBitmap(0, 0, dickbutt2, 128, 64, 1);
 	display.display();
 	display.clearDisplay();
 	Serial.println(WiFi.localIP());
+	digitalWrite(D0, LOW);
   /* add main program code here */
 
 }
