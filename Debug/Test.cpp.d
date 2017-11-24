@@ -32,7 +32,6 @@ C:\Users\Ged\AppData\Local\Temp\VMBuilds\Test\esp8266_nodemcuv2\Debug\Test.cpp.o
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/debug.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/pins_arduino.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\variants\nodemcu/../generic/common.h \
- C:\Users\Ged\AppData\Local\Temp\VMBuilds\Test\esp8266_nodemcuv2\Debug\dickbutt.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/ESP8266WiFi.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/wl_definitions.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/IPAddress.h \
@@ -54,8 +53,13 @@ C:\Users\Ged\AppData\Local\Temp\VMBuilds\Test\esp8266_nodemcuv2\Debug\Test.cpp.o
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/include/ssl.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266HTTPClient\src/ESP8266HTTPClient.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiClient.h \
- C:\Users\Ged\Documents\Arduino\libraries\Adafruit_GFX_Library/Adafruit_GFX.h \
- C:\Users\Ged\Documents\Arduino\libraries\Adafruit_GFX_Library/gfxfont.h \
- C:\Users\Ged\Documents\Arduino\libraries\Adafruit_SSD1306/Adafruit_SSD1306.h \
- C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\SPI/SPI.h \
+ C:\Users\Ged\Documents\Arduino\libraries\MySQL_Connector_Arduino\src/MySQL_Connection.h \
+ C:\Users\Ged\Documents\Arduino\libraries\MySQL_Connector_Arduino\src/MySQL_Packet.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Ethernet\src/Ethernet.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Ethernet\src/EthernetClient.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Ethernet\src/EthernetServer.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Ethernet\src/Dhcp.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Ethernet\src/EthernetUdp.h \
+ C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Udp.h \
+ C:\Users\Ged\Documents\Arduino\libraries\MySQL_Connector_Arduino\src/MySQL_Cursor.h \
  C:\Users\Ged\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\Wire/Wire.h
