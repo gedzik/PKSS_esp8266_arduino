@@ -5,10 +5,6 @@ VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test.vcxproj", "{BE464883-1DF9-47AB-A669-C57AC4FBA893}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssd1306_128x64_i2c", "..\My Examples\131521416267747696\ssd1306_128x64_i2c\ssd1306_128x64_i2c.vcxproj", "{7FCC2C7A-B45B-4EE1-923F-C742070EF3EA}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "connect_wifi", "..\..\..\Documents\Arduino\My Examples\131553915868407226\connect_wifi\connect_wifi.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,14 +15,6 @@ Global
 		{BE464883-1DF9-47AB-A669-C57AC4FBA893}.Debug|x86.Build.0 = Debug|Win32
 		{BE464883-1DF9-47AB-A669-C57AC4FBA893}.Release|x86.ActiveCfg = Release|Win32
 		{BE464883-1DF9-47AB-A669-C57AC4FBA893}.Release|x86.Build.0 = Release|Win32
-		{7FCC2C7A-B45B-4EE1-923F-C742070EF3EA}.Debug|x86.ActiveCfg = Debug|Win32
-		{7FCC2C7A-B45B-4EE1-923F-C742070EF3EA}.Debug|x86.Build.0 = Debug|Win32
-		{7FCC2C7A-B45B-4EE1-923F-C742070EF3EA}.Release|x86.ActiveCfg = Release|Win32
-		{7FCC2C7A-B45B-4EE1-923F-C742070EF3EA}.Release|x86.Build.0 = Release|Win32
-		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
-		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
-		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
-		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

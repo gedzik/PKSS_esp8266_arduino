@@ -4,17 +4,21 @@
 #include <MySQL_Connection.h>
 #include <MySQL_Cursor.h>
 #include <Wire.h>
-
-
+//wifi i mysql zmienne
 IPAddress ip(12, 12, 12, 125);
 IPAddress gat(12, 12, 12, 55);
 IPAddress subnet(255, 255, 255, 0);
+
 WiFiClient client;
 MySQL_Connection conn((Client *)&client);
-
-char INSERT_SQL[] = "UPDATE pkss.system SET value = '10' WHERE name = 'test'";
+//pid
+float Setpoint, Input, Out;
+float Kp = 2, Ki = 0, Kd = 0;
+//zapytania do SQL
+char INSERT_SQL[] = "UPDATE pkss.system SET value = %d WHERE name = 'test'";
 char SELECT_SQL[] = "SELECT value FROM pkss.system WHERE name = 'test' ";
-
+char query[128];
+float zmienna1 = 0;
 void setup()
 {
   /* wifi */
@@ -39,6 +43,8 @@ void setup()
 		Serial.println("Connection failed.");
 		conn.close();
 	}
+
+	Serial.println("PID controller set");
 }
 	/*
 	HTTPClient client;
@@ -56,25 +62,31 @@ void setup()
 void loop()
 {
 	row_values *row = NULL;
-	long head_count = 0;
-
-	//digitalWrite(D0, HIGH);
-	//delay(500);
-	//Serial.println(WiFi.localIP());
-	//digitalWrite(D0, LOW);
-  /* add main program code here */
-	MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);
-	MySQL_Cursor cur = MySQL_Cursor(&conn);
-	cur_mem->execute(INSERT_SQL);
-	cur.execute(SELECT_SQL);
-	cur.get_columns();
+  /* add main program code here 
+	MySQL_Cursor cur_in = MySQL_Cursor(&conn);
+	MySQL_Cursor cur_out = MySQL_Cursor(&conn);
+	sprintf(query, INSERT_SQL, zmienna1);
+	cur_in.execute(query);
+	cur_out.execute(SELECT_SQL);
+	cur_out.get_columns();
 	do {
-		row = cur.get_next_row();
+		row = cur_out.get_next_row();
 		if (row != NULL) {
-			head_count = atol(row->values[0]);
+			zmienna1 = atol(row->values[0]);
 		}
 	} while (row != NULL);
-	cur.close();
-	Serial.println(head_count);
-	delete cur_mem;
+	//tutaj regulacja
+
+	Input = zmienna1;
+	myPID.Compute();
+	zmienna1 = Out;
+	Setpoint = 500;
+	Serial.println(Input);
+	cur_in.close();
+	cur_out.close();
+	Serial.println(zmienna1);
+	*/
+	
+	delay(500);
+	Serial.println(zmienna1);
 }
